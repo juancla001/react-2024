@@ -1,0 +1,78 @@
+.article-app {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+/*.article-app + .article-app{
+    margin-top: 8px;
+}*/
+
+
+
+.header-app{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.div-app{
+    display: flex;
+    flex-direction: column;
+}
+
+.span-app{
+    opacity: .6;
+}
+
+.img-app{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.follow-button-app{
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.follow-button-app:hover {
+    opacity: .8;
+}
+
+.follow-button-text{
+    display: block;
+}
+
+.follow-button-app.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 120px;
+}
+
+
+.follow-button-app.is-following:hover {
+    background-color: rgb(255, 0, 0, 0.178);
+    color: red;
+    border: 1px, solid, red;
+    transition: .3s ease all;
+}
+
+.follow-button-app.is-following:hover .follow-button-text{
+    display: none;
+}
+
+.follow-button-app.is-following:hover .tw-button-unfollow{
+    display: block;
+}
+
+.tw-button-unfollow{
+    display: none;
+}
